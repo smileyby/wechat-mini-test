@@ -1,0 +1,6 @@
+<!--pages/test3/test3.wxml-->
+<nav-bar title="测试3333333333333333333333333333333333333333333333" showHome="{{true}}"></nav-bar>
+<view class="container">
+  <text>pages/test3/test3.wxml</text>
+  <button bindtap="push" data-page="test4">跳转测试4</button>
+</view>

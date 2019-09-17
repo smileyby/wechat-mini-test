@@ -1,0 +1,27 @@
+<!--component/navbar/navbar.wxml-->
+<view class="navbar" style="height:{{height}}px;padding-top:{{statusBarHeight}}px">
+  <block wx:if="{{showSearch}}">
+    <view bindtap="gosearch" class="nav-search" style="height:{{contentHeight}}px;left:{{gap * 2}}px;right:{{searchRight}}px;top:{{top}}px;border-radius:{{contentHeight}}px;line-height:{{contentHeight}}px">
+      <view class="nav-search-icon"></view>
+      <text class="nav-search-placeholer">{{searchPlaceholer}}</text>
+    </view>
+  </block>
+  <block wx:else>
+    <block wx:if="{{showBack && showHome}}">
+      <view class="nav-title" style="width:{{textMinWidth}}px;height:{{contentHeight}}px;left:{{textMaxLeft}}px;top:{{top}}px;line-height:{{contentHeight}}px" wx:if="{{showTitle}}">{{title}}</view>
+      <view class="nav-back-home-group" style="width:{{menuWidth}}px;height:{{menuHeight}}px;left:{{gap * 2}}px;top:{{top}}px;border-radius:{{menuHeight}}px;">
+        <view bindtap="goback" class="group-back back"></view>
+        <view bindtap="gohome" class="group-home home"></view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="nav-title" style="width:{{textMaxWidth}}px;height:{{contentHeight}}px;left:{{textMinLeft}}px;top:{{top}}px;line-height:{{contentHeight}}px" wx:if="{{showTitle}}">{{title}}</view>
+      <block wx:if="{{showBack && !showHome}}">
+        <view bindtap="goback" class="nav-back back" style="left:{{gap*2}}px;top:{{top + (contentHeight - 24)/2}}px;"></view>
+      </block>
+      <block wx:if="{{!showBack && showHome}}">
+        <view bindtap="gohome" class="nav-home home" style="left:{{gap*2}}px;top:{{top + (contentHeight - 24)/2}}px;"></view>
+      </block>
+    </block>
+  </block>
+</view>

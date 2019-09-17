@@ -1,0 +1,8 @@
+<!--pages/test2/test2.wxml-->
+<nav-bar title="测试2222222222222222222222222222222222222222222222222" showBack="{{true}}"></nav-bar>
+<view class="container">
+  <text>pages/test2/test2.wxml</text>
+  <button bindtap="push" data-page="test3">跳转测试3</button>
+  <button bindtap="back" data-index="1">返回上一页</button>
+  <button bindtap="push" data-page="index">返回首页</button>
+</view>

@@ -1,0 +1,7 @@
+<!--logs.wxml-->
+<nav-bar title="日志" showBack="{{true}}" showHome="{{true}}"></nav-bar>
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:key="log" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>
