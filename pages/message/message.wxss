@@ -1,0 +1,28 @@
+/* pages/message/message.wxss */
+.section {
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+.paddingTop {
+  padding: 60rpx;
+}
+.paddingNormal {
+  padding: 30rpx 60rpx;
+}
+.user_info {
+  display: flex;
+  align-items: center;
+}
+.avator {
+  width: 100rpx; 
+  height: 100rpx; 
+  border-radius: 50%;
+  border: 2rpx solid #eee;
+  background-color: #fff;  
+  margin-right: 20rpx;
+}
+.tips {
+  font-size: 26rpx;
+  color: #d5d5d5;
+}
+

@@ -4,24 +4,12 @@ module.exports = {
     type: 'tab',
     path: '/pages/index/index'
   },
-  logs: {
+  message: {
     type: 'tab',
-    path: '/pages/logs/logs'
+    path: '/pages/message/message'
   },
-  test1: {
-    type: 'page',
-    path: '/pages/test1/test1'
-  },
-  test2: {
-    type: 'page',
-    path: '/pages/test2/test2'
-  },
-  test3: {
-    type: 'page',
-    path: '/pages/test3/test3'
-  },
-  test4: {
-    type: 'page',
-    path: '/pages/test4/test4'
+  mine: {
+    type: 'tab',
+    path: '/pages/message/message'
   }
 }

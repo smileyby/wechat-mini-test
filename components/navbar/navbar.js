@@ -1,4 +1,5 @@
 // component/navbar/navbar.js
+const router = require('../../routes/index.js');
 const App = getApp();
 Component({
   properties: {
@@ -68,7 +69,9 @@ Component({
   },
   methods: {
     goback(){ // 返回上一页
-      wx.navigateBack();
+      wx.navigateBack({fail: function(err){
+        console.log(err);
+      }});
     },
     gohome(){ // 返回首页
       wx.switchTab({ url: '/pages/index/index' });

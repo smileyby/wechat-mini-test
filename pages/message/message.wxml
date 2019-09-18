@@ -1,0 +1,13 @@
+<!--pages/message/message.wxml-->
+<nav-bar title="我的消息"></nav-bar>
+<view class="container">
+  <view class="section paddingTop">
+    <view class="user_info">
+      <image src="{{defaultAvator}}" class="avator"></image>
+      <view>
+        <text>点击注册/登录 \n</text>
+        <text class="tips">登陆后可查看经纪人信息</text>
+      </view>
+    </view>
+  </view>
+</view>

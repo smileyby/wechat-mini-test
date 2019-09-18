@@ -1,18 +1,9 @@
 <!--index.wxml-->
-<!-- <nav-bar title="首页" showSearch="true" searchPlaceholer="您想住在哪里呢？"></nav-bar> -->
 <nav-bar title="首页" showSearch="{{true}}"></nav-bar>
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 {{navHeight}}</button>
-    <block wx:else>
-      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-    <button bindtap="push" data-page="/pages/test1/test1">跳转到测试页面1</button>
-    <button bindtap="replace" data-replace="/pages/test3/test3">跳转到测试页面3(没有返回按钮)</button>
-    <button bindtap="push" data-page="/pages/test4/test4">跳转到测试页面4</button>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <text>
+    我的天啊首页好白1 \n
+    我的天啊首页好白2 \n
+    我的天啊首页好白3 \n
+  </text>
 </view>

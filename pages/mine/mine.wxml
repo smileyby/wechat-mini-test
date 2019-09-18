@@ -1,0 +1,18 @@
+<!--pages/mine/mine.wxml-->
+<nav-bar title="个人中心"></nav-bar>
+<view class="container">
+  <view class="section paddingTop">
+    <view class="user_info">
+      <image src="{{defaultAvator}}" class="avator"></image>
+      <text>点击注册/登录</text>
+    </view>
+  </view>
+  <view class="section paddingNormal list_item">
+    <text class="title">我关注的</text>
+    <image src="../../static/images/icon/arrow_right.png" class="right_icon"></image>
+  </view>
+  <view class="section paddingNormal list_item">
+    <text class="title">客服电话</text>
+    <text class="description">123456</text>
+  </view>
+</view>

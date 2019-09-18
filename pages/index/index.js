@@ -7,12 +7,10 @@ const router = require('../../routes/index.js');
 Page({
   data: {
     motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    navHeight: 0
   },
-  onLoad: function () {},
+  onLoad: function () {
+    console.log(App);
+  },
   getUserInfo: function(e) {
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
