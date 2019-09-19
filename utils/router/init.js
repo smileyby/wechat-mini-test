@@ -15,7 +15,6 @@ function init(opt = {}) {
       }
       return key;
     });
-    console.log({routeMap});
   }
 }
 

@@ -11,5 +11,17 @@ module.exports = {
   mine: {
     type: 'tab',
     path: '/pages/message/message'
+  },
+  refresh: {
+    type: 'page',
+    path: '/pages/refresh/refresh'
+  },
+  swiper: {
+    type: 'page',
+    path: '/pages/swiper/swiper'
+  },
+  map: {
+    type: 'page',
+    path: '/pages/map/map'
   }
 }

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "下拉刷新",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "nav-bar": "/components/navbar/navbar"
+  }
+}

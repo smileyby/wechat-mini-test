@@ -2,14 +2,16 @@
   "pages": [
     "pages/index/index",
     "pages/message/message",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/refresh/refresh",
+    "pages/swiper/swiper",
+    "pages/map/map"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ff6700",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#01A08A",
     "navigationBarTitleText": "基础架构",
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [

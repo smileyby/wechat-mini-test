@@ -1,9 +1,12 @@
 <!--index.wxml-->
-<nav-bar title="首页" showSearch="{{true}}"></nav-bar>
+<nav-bar searchPlaceholer="超级超级长的衣蛾标题" showSearch="{{true}}"></nav-bar>
 <view class="container">
   <text>
     我的天啊首页好白1 \n
     我的天啊首页好白2 \n
     我的天啊首页好白3 \n
   </text>
+  <button bindtap="push" data-page="refresh" class="index-button" type="primary">查看refresh</button>
+  <button bindtap="push" data-page="swiper" class="index-button" type="primary">查看swiper</button>
+  <button bindtap="push" data-page="form" class="index-button" type="primary">查看地图</button>
 </view>

@@ -6,10 +6,10 @@ const router = require('../../routes/index.js');
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: 'Amazing',
   },
   onLoad: function () {
-    console.log(App);
+    console.log('App onLoad');
   },
   getUserInfo: function(e) {
     app.globalData.userInfo = e.detail.userInfo

@@ -1,5 +1,4 @@
 {
-  "navigationStyle": "custom",
   "usingComponents": {
     "nav-bar": "/components/navbar/navbar"
   }

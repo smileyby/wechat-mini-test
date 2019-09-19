@@ -1,0 +1,4 @@
+<!--pages/refresh/refresh.wxml-->
+<text>下拉刷新页面</text>
+<button type="primary" bindtap="start">开始刷新</button>
+<button type="primary" bindtap="end">停止刷新</button>
