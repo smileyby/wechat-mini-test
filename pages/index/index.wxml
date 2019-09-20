@@ -1,12 +1,161 @@
 <!--index.wxml-->
-<nav-bar searchPlaceholer="超级超级长的衣蛾标题" showSearch="{{true}}"></nav-bar>
 <view class="container">
-  <text>
-    我的天啊首页好白1 \n
-    我的天啊首页好白2 \n
-    我的天啊首页好白3 \n
-  </text>
-  <button bindtap="push" data-page="refresh" class="index-button" type="primary">查看refresh</button>
-  <button bindtap="push" data-page="swiper" class="index-button" type="primary">查看swiper</button>
-  <button bindtap="push" data-page="form" class="index-button" type="primary">查看地图</button>
+
+  <!-- 头部轮播+搜索 -->
+  <view class="section header">
+    <view class="search">
+      <view class="search-placeholder">
+        <text>你想住在哪里？</text>
+      </view>
+      <view class="search-position">
+        <text>广州</text>
+      </view>
+    </view>
+    <view class="swiper-container">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:key="{{imgUrl}}" wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <!-- 频道列表 -->
+    <view class="section channel-group padding">
+      <view class="channel-item">
+        <view class="channel-icon">
+          <image src="../../static/images/icon/icon_1.png"></image>  
+        </view>
+        <view class="channel-title">二手房</view>
+      </view>
+      <view class="channel-item">
+        <view class="channel-icon">
+          <image src="../../static/images/icon/icon_2.png"></image>  
+        </view>
+        <view class="channel-title">租房</view>
+      </view>
+      <view class="channel-item">
+        <view class="channel-icon">
+          <image src="../../static/images/icon/icon_3.png"></image>  
+        </view>
+        <view class="channel-title">新房</view>
+      </view>
+      <view class="channel-item">
+        <view class="channel-icon">
+          <image src="../../static/images/icon/icon_4.png"></image>  
+        </view>
+        <view class="channel-title">海外</view>
+      </view>
+      <view class="channel-item">
+        <view class="channel-icon">
+          <image src="../../static/images/icon/icon_5.png"></image>  
+        </view>
+        <view class="channel-title">商铺办公</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 常用工具 -->
+  <view class="section normal-tools padding">
+    <text class="title">常用工具</text>
+    <view class="normal-tools-list">
+      <view class="tool">
+        <text class="tool-name">房贷计算</text>
+        <text class="tool-dec">买月供还多少</text>
+        <text class="tool-entry">立即计算</text>
+      </view>
+      <view class="tool">
+        <text class="tool-name">购房资质</text>
+        <text class="tool-dec">我有购房资格吗</text>
+        <text class="tool-entry">立即查询</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 常用工具2 -->
+  <view class="section normal-tools padding">
+    <text class="title bold">帮我找房</text>
+    <view class="normal-tools-list">
+      <view class="tool">
+        <text class="tool-dec">全程经纪人为您线上找房</text>
+        <text class="tool-dec">定制推荐/极速响应/专属推荐</text>
+        <text class="tool-entry">立即找房</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 推荐位 -->
+  <view class="section recommend padding">
+    <view class="title-container">
+      <text class="title bold">新房·本周热门好盘</text>
+      <text class="more">更多在售楼盘</text>
+    </view>
+    <view class="room-container">
+      <view class="room-list">
+        <view class="room-view">
+          <image class="room-image" src="../../static/images/room/room.jpg"></image>
+          <text class="room-location">从化</text>
+        </view>
+        <text class="room-name">珠江新城</text>
+        <text class="room-desc">83-200m²</text>
+        <text class="room-price">17000/m²</text>
+      </view>
+      <view class="room-list">
+        <view class="room-view">
+          <image class="room-image" src="../../static/images/room/room.jpg"></image>
+          <text class="room-location">从化</text>
+        </view>
+        <text class="room-name">珠江新城</text>
+        <text class="room-desc">83-200m²</text>
+        <text class="room-price">17000/m²</text>
+      </view>
+      <view class="room-list">
+        <view class="room-view">
+          <image class="room-image" mode="scaleToFill" src="../../static/images/room/room.jpg"></image>
+          <text class="room-location">从化</text>
+        </view>
+        <text class="room-name">珠江新城</text>
+        <text class="room-desc">83-200m²</text>
+        <text class="room-price">17000/m²</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="section recommend padding">
+    <text class="title bold">猜你喜欢的二手房</text>
+    <view class="big-room-list">
+      <view class="room-image">
+        <image src="../../static/images/room/room.jpg" mode="scaleToFill"></image>
+      </view>
+      <view class="room-info">
+        <text class="room-name">三房带主套 南北对流 阳光充足 带精装修 看房方便</text>
+        <text class="room-desc">3室2厅/82m²/南/建设北路</text>
+        <view class="room-tag">
+          <text class="tag">满两年</text>
+          <text class="tag">近地铁</text>
+        </view>
+        <text class="room-price">89万</text>
+        <text class="room-price">10853.7/平</text>
+      </view>
+    </view>
+    <view class="big-room-list">
+      <view class="room-image">
+        <image src="../../static/images/room/room.jpg" mode="scaleToFill"></image>
+      </view>
+      <view class="room-info">
+        <text class="room-name">三房带主套 南北对流 阳光充足 带精装修 看房方便</text>
+        <text class="room-desc">3室2厅/82m²/南/建设北路</text>
+        <view class="room-tag">
+          <text class="tag">满两年</text>
+          <text class="tag">近地铁</text>
+        </view>
+        <text class="room-price">89万</text>
+        <text class="room-price">10853.7/平</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 占位块 -->
+  <view class="section placeholder"></view>
 </view>

@@ -1,5 +1,5 @@
 {
-  "navigationStyle": "custom",
+  "navigationBarTitleText": "优居优住",
   "usingComponents": {
     "nav-bar": "/components/navbar/navbar"
   }
