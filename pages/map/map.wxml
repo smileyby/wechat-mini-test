@@ -5,8 +5,7 @@
   longitude="{{longitude}}" 
   latitude="{{latitude}}" 
   markers="{{markers}}"
-  style="width: 100%; height: 100%;"
-  bindmarkertap="markertap">
+  style="width: 100%; height: 100%;">
 </map>
 <view class="guide" bindtap="guideToLocation">导航</view>
 <scroll-view scroll-x="true" class="around-type-container">

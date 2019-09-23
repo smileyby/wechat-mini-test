@@ -100,16 +100,6 @@ Page({
       }
     })
   },
-  markertap(e) {
-    let markerId =  e.markerId;
-    let markers = this.data.markers;
-    let index = markers.findIndex(item => item.id === markerId);
-    if (markers[index].callout.display === 'ALWAYS') return;
-    let temp = `markers[${index}].callout.display`;
-    this.setData({
-      [temp]: 'ALWAYS'
-    })
-  },
   guideToLocation(){
     let data = this.data;
     wx.openLocation({
