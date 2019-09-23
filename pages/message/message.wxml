@@ -10,4 +10,20 @@
       </view>
     </view>
   </view>
+  <view class="section paddingNormal list_item">
+    <text class="title">我的周边</text>
+    <image src="../../static/images/icon/arrow_right.png" class="right_icon"></image>
+  </view>
+  <map 
+    id="map" 
+    longitude="{{longitude}}" 
+    latitude="{{latitude}}" 
+    scale="14" 
+    markers="{{markers}}"
+    circles="{{circles}}"
+    enable-zoom="{{false}}"
+    enable-scroll="{{false}}"
+    style="width: 100%; height: 400rpx;"
+    bindtap="push">
+  </map>
 </view>

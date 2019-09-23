@@ -86,8 +86,8 @@ Component({
         searchWidth,
         titleWidth,
         titleLeft,
+        titleTextAlign,
       });
-      console.log(this.data)
     },
     goback(){ // 返回上一页
       wx.navigateBack({fail: function(err){

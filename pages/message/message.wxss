@@ -25,4 +25,14 @@
   font-size: 26rpx;
   color: #d5d5d5;
 }
+.list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right_icon {
+  float: right;
+  width: 44rpx;
+  height: 44rpx;
+}
 
