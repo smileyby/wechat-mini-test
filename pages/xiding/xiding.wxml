@@ -1,0 +1,58 @@
+<view class="content"></view>
+<!-- 搜索 -->
+<view class="filter-tab-container" id="filter-tab-container">
+<!-- 吸顶容器 -->
+  <view class="filter-tab-fixed {{fixed ? 'fixed' : ''}}">
+    <view class="filter-tab">
+      <view class="filter-tab-item">
+        区域
+        <image src="../../static/images/icon/arrow.png"></image>
+      </view>
+      <view class="filter-tab-item">
+        价格
+        <image src="../../static/images/icon/arrow.png"></image>
+      </view>
+      <view class="filter-tab-item">
+        户型
+        <image src="../../static/images/icon/arrow.png"></image>
+      </view>
+      <view class="filter-tab-item">
+        筛选
+        <image src="../../static/images/icon/arrow.png"></image>
+      </view>
+      <view class="filter-tab-item">
+        <image src="{{imgSrc}}" class="filter-tab-item-sort"></image>
+      </view>
+    </view>
+    <!-- 筛选项 -->
+    <view class="filter-tab-content-container {{fixed ? 'show':''}}">
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+      <view>这就是一个内容区域</view>
+
+    </view>
+  </view>
+</view>
+<view class="content"></view>
+<view class="content"></view>
+<view class="content"></view>
+<view class="content"></view>
+<view class="content"></view>
+<view class="content"></view>
+

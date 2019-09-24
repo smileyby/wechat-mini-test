@@ -1,0 +1,71 @@
+/* pages/xiding/xiding.wxss */
+page {
+  background: #ff6700;
+}
+.tab-container {
+  height: 100rpx;
+}
+.filter-tab-fixed {
+  width: 100%;
+}
+.filter-tab-fixed.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.filter-tab {
+  display: flex;
+  width: 100%;
+  padding: 0 24rpx;
+  height: 100rpx;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-sizing: border-box;
+}
+.filter-tab-item {
+  flex: 1;
+  height: 100%;
+  line-height: 50px;
+  font-size: 28rpx;
+  text-align: center;
+  color: #101d37;
+}
+.filter-tab-item image {
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+  margin-left: -4rpx;
+  margin-top: -4rpx;
+}
+.filter-tab-item-sort {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+}
+
+.filter-tab-content-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 100rpx;
+  background: #fff;
+  display: none;
+  z-index: 10;
+}
+.filter-tab-content-container.show {
+  display: block;
+}
+
+
+
+
+
+
+.content {
+  height: 300px;
+  background: gray;
+  margin-bottom: 10px;
+}
